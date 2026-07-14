@@ -91,7 +91,6 @@ public class notepad extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
 
-        // File Actions
         if (source == newItem) {
             textArea.setText("");
             setTitle("Untitled - Java Notepad");
@@ -103,7 +102,6 @@ public class notepad extends JFrame implements ActionListener {
         } else if (source == exitItem) {
             System.exit(0);
         } 
-        // Edit Actions
         else if (source == cutItem) {
             textArea.cut();
         } else if (source == copyItem) {
@@ -113,7 +111,6 @@ public class notepad extends JFrame implements ActionListener {
         } else if (source == selectAllItem) {
             textArea.selectAll();
         } 
-        // Help Actions
         else if (source == aboutItem) {
             JOptionPane.showMessageDialog(this, "Java Notepad Clone\nBuilt using Swing & AWT.", "About", JOptionPane.INFORMATION_MESSAGE);
         }
