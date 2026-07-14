@@ -77,7 +77,6 @@ public class notepad extends JFrame implements ActionListener {
         aboutItem.addActionListener(this);
         helpMenu.add(aboutItem);
 
-        // Add action listeners
         newItem.addActionListener(this);
         openItem.addActionListener(this);
         saveItem.addActionListener(this);
